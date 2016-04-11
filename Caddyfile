@@ -1,8 +1,10 @@
 :8443 {
  tls /srv/certs/example_chain.pem /srv/certs/example.key
  root /srv/publics
+ browse /test
 }
-:8080 {
+:8080/ {
  root /srv/public
+ browse /test
 }
 
