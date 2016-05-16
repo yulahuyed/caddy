@@ -8,7 +8,6 @@ RUN chmod 0755 /usr/bin/caddy \
  && /usr/bin/caddy -version
 
 EXPOSE 8080 8443
-VOLUME /srv
 WORKDIR /srv
 
 ADD Caddyfile /etc/Caddyfile

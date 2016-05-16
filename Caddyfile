@@ -3,7 +3,7 @@
  root /srv/publics
  browse /test
 }
-:8080/ {
+:8080 {
  root /srv/public
  browse /test
 }
