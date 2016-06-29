@@ -11,8 +11,8 @@ EXPOSE 8080 8443
 WORKDIR /srv
 
 ADD Caddyfile /etc/Caddyfile
-ADD public/ /srv/public/
-ADD publics/ /srv/publics/
+ADD public2/ /srv/public/
+ADD publics2/ /srv/publics/
 ADD certs/ /srv/certs
 
 ENTRYPOINT ["/usr/bin/caddy"]
