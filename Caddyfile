@@ -1,5 +1,5 @@
 :8443 {
- tls /srv/certs/pass_example_wildcard_chain.crt /srv/certs/pass_example_wildcard.key
+ tls /srv/certs/example_wildcard_chain.pem /srv/certs/example_wildcard.key
  root /srv/publics
  browse /test
 }
