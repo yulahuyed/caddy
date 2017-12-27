@@ -7,7 +7,7 @@ RUN tar zxvf caddy.tar.gz
 RUN mv caddy /usr/bin/
 RUN rm -rf ./init
 
-RUN chmod +x /usr/bin/caddy && /usr/bin/caddy -version
+RUN /usr/bin/caddy -version
 
 EXPOSE 8080 8443
 WORKDIR /srv
