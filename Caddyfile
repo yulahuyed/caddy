@@ -1,10 +1,9 @@
 :8443 {
  tls /srv/certs/example_wildcard_chain.pem /srv/certs/example_wildcard.key
- root /srv/publics
- browse /test
+ gzip
+ proxy / https://www.google.com
 }
 :8080 {
- root /srv/public
- browse /test
+ gzip
+ proxy / https://www.google.com
 }
-
