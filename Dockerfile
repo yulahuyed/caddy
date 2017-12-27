@@ -2,7 +2,10 @@ FROM alpine:3.2
 
 RUN apk add --update openssh-client git tar
 
-ADD caddy /usr/bin/
+RUN wget -O "caddy.tar.gz" "https://caddyserver.com/download/linux/amd64"
+RUN tar zxvf caddy.tar.gz
+RUN mv caddy /usr/bin/
+RUN rm -rf ./init
 
 RUN chmod 0755 /usr/bin/caddy \
  && /usr/bin/caddy -version
